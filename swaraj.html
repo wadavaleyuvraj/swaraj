@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Swaraj - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: linear-gradient(135deg, #ffeb3b, #fbc02d);
+            color: #595959;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+            padding-top: 80px;
+        }
+
+        h1, h2 {
+            font-family: 'Segoe UI', sans-serif;
+            letter-spacing: 1.5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #212121;
+            color: white;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            z-index: 10;
+        }
+
+        nav a {
+            font-size: 18px;
+            color: white;
+            font-weight: 600;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffeb3b;
+        }
+
+        .profile-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffeb3b;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .profile-section h1 {
+            font-size: 3.3rem;
+            margin-top: 20px;
+        }
+
+        .profile-section p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        .profile-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 30px;
+            transition: transform 0.4s ease;
+        }
+
+        .profile-section img:hover {
+            transform: scale(1.1);
+        }
+
+
+        .about {
+            background-color: white;
+            padding: 40px;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            background-color: #fafafa;
+            padding: 40px 10%;
+            margin: 20px 0;
+        }
+
+        .skills div {
+            background-color: #ff7043;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            width: 25%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skills div:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .skills div h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .skills div p {
+            font-size: 1.1rem;
+        }
+        .projects {
+            padding: 40px 10%;
+            background-color: white;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .projects h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+S W, [28-12-2024 22:17]
+.project-card {
+            background-color: #ff7043;
+            color: white;
+            padding: 30px;
+            width: 250px;
+            height: 300px;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            font-size: 1.1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #212121;
+            color: white;
+        }
+
+        footer a {
+            color: #ff7043;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+   
+    <section class="profile-section">
+        <img src="./me.jpg" alt="Swaraj's Photo">
+        <div>
+            <h1>Hi, I'm Swaraj!</h1>
+            <p>Student | Developer | C Language Enthusiast</p>
+        </div>
+    </section>
+    
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Swaraj, a student passionate about coding and problem-solving. I enjoy working with C, HTML, and CSS, and am currently exploring the potential of building dynamic websites and efficient applications. I'm always looking for ways to improve my skills through hands-on projects.</p>
+    </section>
+
+    <section class="skills">
+        <div>
+            <h3>HTML</h3>
+            <p>Developing structured and well-organized websites.</p>
+        </div>
+        <div>
+            <h3>CSS</h3>
+            <p>Designing modern and responsive user interfaces.</p>
+        </div>
+        <div>
+            <h3>C</h3>
+            <p>Building fast and efficient programs with C.</p>
+        </div>        
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A responsive and user-friendly personal website built with HTML and CSS.</p>
+        </div>
+        <div class="project-card">
+            <h3>Calculator in C</h3>
+            <p>A simple but functional calculator application built in C.</p>
+        </div>        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Swaraj. <a href="mailto:swaraj@example.com">Contact Me</a></p>
+    </footer>
+
+</body>
+</html>
